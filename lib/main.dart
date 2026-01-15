@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:game_2048/presentation/theme/theme_cubit.dart';
-import 'package:game_2048/presentation/theme/theme_state.dart';
-import 'package:game_2048/presentation/theme/theme_provider.dart';
+import 'package:game_2048/data/data_source/database_data_source.dart';
 import 'package:game_2048/presentation/di/injector.dart';
 import 'package:game_2048/presentation/pages/splash_page/splash_page.dart';
-import 'package:game_2048/data/data_source/database_data_source.dart';
+import 'package:game_2048/presentation/theme/theme_cubit.dart';
+import 'package:game_2048/presentation/theme/theme_provider.dart';
+import 'package:game_2048/presentation/theme/theme_state.dart';
 
 void main() async {
   await DatabaseDataSource.initializeHive();
